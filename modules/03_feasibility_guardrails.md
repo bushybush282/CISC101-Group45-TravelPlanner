@@ -4,7 +4,7 @@ Apply these **if/else** checks to make sure plans are realistic and adapt to edg
 
 1. **Closed Venue**
    
-   - If a museum or park is closed on that day → suggest a similar indoor option nearby.
+   - If a museum or park is closed on that day → suggest a similar option nearby.
 
 2. **Over-Budget Meal**
    
