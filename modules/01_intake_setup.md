@@ -1,34 +1,16 @@
+
 ### **Module 1 — Intake & Setup**
 
+Collect essential details:
+
 - Destination(s)
-- Primary city or region
-  - Optional multi-city route with order and stay length
-  - Lodging anchor (neighborhood or city center if unknown)
-- Timing (separate modes)
-  - Mode: fixed-dates | flexible-length
-  - Fixed-dates fields: start_date, end_date, nights (derived), local timezone
-  - Flexible-length fields: nights, target_window (optional)
-  - Normalization: derive season and daily context for weather checks
+- Dates or trip length
 - Number of travelers
-  - Adults, children, special needs (e.g., stroller-friendly, mobility limits)
-- Budget style
-  - Affordable | Mid-range | Luxury
-  - Internally mapped to per-person-per-day ranges for meals and activities
-- Interests
-  - Food (street, market, fine dining)
-  - Culture (museums, historical sites, local crafts)
-  - Nature (parks, scenic walks)
-  - Nightlife, shopping, sports, wellness
-- Preferred pace
-  - Relaxed → 2 activities + long lunch + breaks
-  - Balanced → 3 activities + standard lunch
-  - Fast → 4 activities + short lunch
-- Normalization: ties pace to daily activity targets and time budgets
-- Key constraints
-  - Mobility: step-free required (bool), max_walk_km, break_frequency_hours
-  - Diet: vegan, vegetarian, halal, kosher, gluten-free, nut allergy (bools)
-  - Weather sensitivity: prefers indoor if rain (bool)
-- Fallbacks
-  - Missing dates → assume typical season for destination
-  - Unknown lodging → default to city center or transit hub
-  - Missing budget → default to mid-range
+- Budget style (affordable, mid-range, luxury)
+- Interests (food, culture, nature, etc.)
+- Preferred pace (relaxed, balanced, fast)
+- Key constraints (mobility, weather, diet)
+
+Normalize details (e.g., dates, season) and store them in a simple JSON internally.
+
+---
